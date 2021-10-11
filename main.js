@@ -9,5 +9,19 @@ const grossPrice = kilometres * 0.21
 document.getElementById("initialprice").innerHTML = grossPrice
 
 //applicare lo sconto in base all 'eta (20% minorenni, 40% over 65)
+if (userAge < 18) {
+    const minorDiscount = ((grossPrice * 20) / 100).toFixed(2);
+    document.getElementById("discount").innerHTML = minorDiscount
+    document.getElementById("total_price").innerHTML = grossPrice - minorDiscount
 
-// mostrare il prezzo finale
+} else if (userAge > 65) {
+    const overDiscount = ((grossPrice * 40) / 100).toFixed(2);
+    document.getElementById("discount").innerHTML = overDiscount
+    document.getElementById("total_price").innerHTML = grossPrice - overDiscount
+
+} else {
+    const noDiscount = 0
+    document.getElementById("discount").innerHTML = noDiscount
+    document.getElementById("total_price").innerHTML = grossPrice
+}
+
