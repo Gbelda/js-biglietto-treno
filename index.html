@@ -21,10 +21,35 @@
             </nav>
         </header>
         <!-- NAV -->
-        <main class="bg-secondary">
-            <div id="initialprice"></div>
-            <div id="discount"></div>
-            <div id="total_price"></div>
+        <main class="bg-secondary d-flex justify-content-center py-5
+            align-items-center">
+
+            <div class="card" style="width: 18rem;">
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item fw-bold text-center">
+                        Biglietto
+
+                    </li>
+                    <li class="list-group-item fw-bold d-flex
+                        justify-content-between">
+                        Prezzo iniziale
+                        <div id="initialprice"></div>
+                    </li>
+                    <li class="list-group-item text-danger fw-bold d-flex
+                        justify-content-between">
+                        Sconto
+                        <div id="discount"></div>
+                    </li>
+                </ul>
+                <div class="card-footer fw-bold d-flex justify-content-between">
+                    Totale
+                    <div id="total_price"></div>
+                </div>
+            </div>
+            <!-- CARD -->
+
+
+
         </main>
 
         <script src="./main.js"></script>
