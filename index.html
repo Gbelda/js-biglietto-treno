@@ -11,42 +11,53 @@
             integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
             crossorigin="anonymous">
 
+
     </head>
     <body>
         <header>
-            <nav class="navbar navbar-light bg-primary">
-                <div class="container-fluid">
-                    <span class="navbar-brand mb-0 h1">Boolean Express</span>
+            <nav class="navbar navbar-light bg-light">
+                <div class="container">
+                    <span class="navbar-brand mb-0 h1 text-primary">Boolean
+                        Express</span>
                 </div>
             </nav>
         </header>
         <!-- NAV -->
-        <main class="bg-secondary d-flex justify-content-center py-5
-            align-items-center">
+        <main class="bg-secondary d-flex py-5" style="height:
+            100vh; background-image:
+            url(https://upload.wikimedia.org/wikipedia/commons/0/01/Albula_Alps.jpg);
+            background-size: cover;">
+            <div class="container text-center">
+                <div class="card m-auto" style="width: 18rem;">
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item fw-bold text-center">
+                            Biglietto
 
-            <div class="card" style="width: 18rem;">
-                <ul class="list-group list-group-flush">
-                    <li class="list-group-item fw-bold text-center">
-                        Biglietto
-
-                    </li>
-                    <li class="list-group-item fw-bold d-flex
+                        </li>
+                        <li class="list-group-item fw-bold d-flex
+                            justify-content-between">
+                            Prezzo iniziale
+                            <div id="initialprice"></div>
+                        </li>
+                        <li class="list-group-item text-danger fw-bold d-flex
+                            justify-content-between">
+                            Sconto
+                            <div id="discount"></div>
+                        </li>
+                    </ul>
+                    <div class="card-footer fw-bold d-flex
                         justify-content-between">
-                        Prezzo iniziale
-                        <div id="initialprice"></div>
-                    </li>
-                    <li class="list-group-item text-danger fw-bold d-flex
-                        justify-content-between">
-                        Sconto
-                        <div id="discount"></div>
-                    </li>
-                </ul>
-                <div class="card-footer fw-bold d-flex justify-content-between">
-                    Totale
-                    <div id="total_price"></div>
+                        Totale
+                        <div id="total_price"></div>
+                    </div>
+                    <button type="button" class="btn btn-success mt-5">
+                        Acquista Ora
+                    </button>
                 </div>
+                <!-- CARD -->
+
             </div>
-            <!-- CARD -->
+
 
 
 

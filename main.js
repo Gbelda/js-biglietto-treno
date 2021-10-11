@@ -12,12 +12,12 @@ document.getElementById("initialprice").innerHTML = "\u20AC" + grossPrice
 if (userAge < 18) {
     const minorDiscount = ((grossPrice * 20) / 100).toFixed(2);
     document.getElementById("discount").innerHTML = "- \u20AC" + minorDiscount;
-    document.getElementById("total_price").innerHTML = "\u20AC" + (grossPrice - minorDiscount);
+    document.getElementById("total_price").innerHTML = "\u20AC" + (grossPrice - minorDiscount).toFixed(2)
 
 } else if (userAge > 65) {
     const overDiscount = ((grossPrice * 40) / 100).toFixed(2);
     document.getElementById("discount").innerHTML = "- \u20AC" + overDiscount
-    document.getElementById("total_price").innerHTML = "\u20AC" + (grossPrice - overDiscount)
+    document.getElementById("total_price").innerHTML = "\u20AC" + (grossPrice - overDiscount).toFixed(2)
 
 } else {
     const noDiscount = 0
